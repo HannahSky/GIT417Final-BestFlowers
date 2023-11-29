@@ -1,0 +1,305 @@
+:root{
+    --dusty-pink:#edafb8;
+    --green:#06D6A0;
+    --lt-blue:#118AB2;
+    --bb-blue: #bde0fe;
+    --dk-blue:#073B4C;
+    --rose:#f38375;
+    --off-wh: antiquewhite;
+}
+
+*{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+body{
+    width: 1280px;
+    margin: 0 auto;
+    background-color: var(--dusty-pink);
+    background-image: url("Photos/wild-flowers.png");
+}
+
+#container{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: #f4f4f4;
+
+}
+
+header{
+    width: 100%;
+    background: rgb(255,227,224);
+    background: linear-gradient(0deg, rgba(255,227,224,1) 36%, rgba(251,195,188,1) 59%, rgba(247,163,153,1) 73%, rgba(243,131,117,1) 91%, rgba(239,99,81,1) 100%);
+}
+
+header #darkMode{
+    float: right;
+    margin-right: 2rem;
+    margin-top: 2rem;
+}
+
+header #cartoon{
+    float: left;
+    width: 5em;
+    height: 5em;
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+header h1 a{
+    color: var(--dk-blue);
+    text-decoration: none;
+    position: relative;
+    font-size: 3rem;
+    left: 15rem;
+    top: 2rem;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    list-style-type: none;
+    padding-top: 4rem;
+    gap: 3rem;
+}
+
+nav li{
+    text-align: center;
+    background-color: #118AB2;
+    border-radius: 2ch;
+}
+
+nav a{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: #f4f4f4; 
+}
+
+nav a:hover{
+    background-color: #073B4C;
+    border-radius: 2ch;
+}
+
+div #btnClick:hover{
+    color: var(--bb-blue);
+}
+
+#heroImg{
+    width: 1000px;
+    height: 400px;
+}
+
+#productDisplay{
+    padding-left: 1rem;
+}
+
+#game{
+    background-color: var(--bb-blue);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 200px;
+}
+
+#game form{
+    padding-left: 1rem;
+    margin-top: -50px;
+    
+}
+
+#game label{
+    padding-bottom: 1rem;
+}
+
+#game input{
+    width: 70px;
+    height: 20px;
+}
+
+#game button{
+    padding: .5rem;
+    color:#073B4C;
+    font-weight: 700;
+    margin-top: -20px;
+    left: 5px; 
+}
+
+span #gameMsg{
+    display: block;
+    margin: 0.25em auto;
+    height: 1.5em;
+    color: #f4f4f4;
+  }
+
+#game p{
+    line-height: 1.5rem;
+}
+
+h2, h3, p{
+    padding-left: 1rem;
+    color:#073B4C;
+}
+
+h2{
+    font-size: 32px;
+}
+
+h3{
+    font-size: 24px;
+}
+
+.flowerImg{
+    width:400px; 
+    height:500px; 
+}
+
+#productDisplay ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    font-size: 1.2rem;
+    list-style-type: none;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+#productDisplay li{
+    text-align: center;
+    background-color: var(--lt-blue);
+    width: 70%;
+    padding: 1rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+}
+
+#productDisplay a{
+    text-decoration: none;
+    color: #f4f4f4;
+}
+
+#productCards li:hover{
+    background-color: var(--dk-blue)
+}
+
+#productCards{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 967px;
+}
+
+#productCards img{
+    float: left;
+    padding: 10px;
+}
+
+#productCards h2, p{
+    float: right;
+    max-width: 30rem;
+    margin-right: 2rem;
+}
+
+#productCards p{
+    padding-top: 10px;
+    margin-top: 3rem;
+    font-size: 1.3rem;
+}
+
+#productCards h2{
+    margin-right: 15rem;
+}
+
+/*#productCards div.hidden{
+    visibility: hidden;
+}
+
+#productCards #roses{
+    visibility: visible;
+}*/
+
+#infoContact form{
+    width: 480px;
+    margin: 0 auto;
+    background-color: var(--bb-blue);
+    color: var(--dk-blue);
+    padding: 20px;
+    margin-bottom: 50px;
+}
+
+#infoContact input, label, textarea{
+    display: block;
+    width: calc(100% - 2em);
+}
+
+#infoContact label{
+    padding-top: .5rem;
+}
+
+#infoContact input, textarea, select{
+	border: none;
+	border-radius: 0.2em;
+}
+
+#infoContact input{
+    width:475px;
+    height: 2rem;
+}
+
+#infoContact fieldset{
+	margin: 0.5em auto;
+	padding-bottom: 0.5em;
+	width: 94%;
+	border: 1px solid #222;
+	border-radius: 0.2em;
+	display: grid;
+	grid-template-columns: 30px 1fr 30px 1fr;
+}
+
+#infoContact legend{
+	padding: 0.5em;
+}
+
+
+#infoContact fieldset input{
+	display: inline;
+	width: 20px;
+}
+
+#infoContact select{
+	display: block;
+	width: 55%;
+	margin: 0.25em auto 0.5em auto;
+	padding: 0.5em;
+	font-size: 1em;
+}
+
+#infoContact textarea{
+	width: 425px;
+	height: 100px;
+	padding-right: 3rem;
+}
+
+#infoContact #mySubmit{
+    margin-top: .5rem;
+    width: 200px;
+    margin-left: 268px;
+    background-color: var(--dk-blue);
+    color: #f4f4f4;
+}
+
+#infoContact #mySubmit:hover{
+    background-color: var(--dusty-pink);
+    color: var(--dk-blue);
+}
+
+footer{
+    background-color: var(--rose);
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+

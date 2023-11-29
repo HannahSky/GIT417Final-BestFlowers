@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Hannah Kaminsky">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Welcome to BestFlowers website! Here you can learn about flowers and build the perfect bouquet.">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <script src="script.js" defer></script>
+    <link rel="icon" href="Photos/favicon.ico" type="image/x-icon">
+    <title>BestFlowers</title>
+</head>
+<body>
+    <div id="container">
+        <header id="topPage">
+            <div>
+                <img id="cartoon" src="Photos/FlowerPNG.png" alt="pink cartoon flower with a smiley face">
+                <img class="btnClick" id="darkMode" src="photos/darkmode.svg" width="65" height="65" alt=" crescent moon icon">
+                <h1><a href="index.html">Best Flowers</a></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Shop</a></li>
+                    <li><a href="#">About</a></li>
+                </ul>
+            </nav>
+            <!--Put a hero image here-->
+            <img id="heroImg" src="Photos/pinkFlowers.avif" alt= "bright pink flowers on a tree branch contrasting with a clear blue sky">
+        </header>
+
+        <main id="mainContent">
+            <section id="game">
+                <h2>Enter to Win!</h2>
+                <p>How To Play: <br> Click the button to generate a number. <br> If your number matches the winning number then you win 2 free bouquets!</p>
+                <form>
+                    <label for="num1">Enter a Number between 1 and 10:</label>
+                    <input type="number" name="num1" id="num1">
+                    <span id="gameMsg"></span>
+                    <button id="gameBtn">Guess a Number</button>
+                </form>
+            </section>
+
+            <section id="productDisplay">
+                <h2>Flowers</h2>
+                <section id="productCards">
+                    <div id="roses" class="hidden">
+                        <h2>Roses</h2> <!--is it better to have these as dt and dd?-->
+                        <img class="flowerImg" src="Photos/PinkRoses.webp" alt="a bouquet of white roses displayed with water droplets">
+                        <p>Roses are known as a symbol of love. <br> They are also called by their scientific name Rosa, roses have over three hundred species. Not only are they one of the most wide-known flower type but also one of the oldest species of plant cultivated and used for decorations.</p>
+                    </div>
+
+                    <div id="tulips" class="hidden">
+                        <h2>Tulips</h2>
+                        <img class="flowerImg" src="Photos/Tulips.jpg" alt="a close up of a field of tulips in red, yellow, orange and white">
+                        <p>Tulips are a known symbol of happiness and joy. Tulips are also called by their scientific name Tulipa. Holland is the largest producer of tulips worldwide, exporting about 3 billion bulbs per year. They also come in the wide range of colors from red to purple, blue and even black.</p> <!--Finish adding sentences here-->
+                    </div>
+
+                    <div id="lilies" class="hidden">
+                        <h2>Lilies</h2>
+                        <img class="flowerImg" src="Photos/Lillies.jpg" alt="a very close up shot of a pink lily with a gradient to white then yellow in the center">
+                        <p>Lilies are known as the symbol of purity and beauty. Lilies are also called by their scientific name Lilium. They also have one of the longest in-vase lifespans of any cut bloom, but be careful because they are poisonous to cats!</p> <!--Finish aping sentences here-->
+                    </div>
+
+                    <div id="sunflowers" class="hidden">
+                        <h2>Sunflowers</h2>
+                        <img class="flowerImg" src="Photos/SunflowerSunset.webp" alt="A close up shot of a field of sunflowers, bright yellow as they crowd around each other">
+                        <p>Sunflowers are as the symbol for loyalty and adoration. Sunflowers are also called by their scientific name Helianthus. They are a great healthy snack, their seeds are a rich source of protein, potassium, magnesium, calcium, iron, and vitamin E. Not only that, sunflowers are unique, they need a lot of sun (around 6-8 hours a day) so the buds rotate towards the sun to get the most amount as possible.</p> <!--Finish aping sentences here-->
+                    </div>
+
+                    <!-- Have to ap some kind of buttons. How? -->
+                <ul>
+                    <li><a class="roses" href="#">Roses</a></li>
+                    <li><a class="tulips" href="#">Tulips</a></li>
+                    <li><a class="liles" href="#">Lilies</a></li>
+                    <li><a class="sunflowers" href="#">Sunflowers</a></li>
+                </ul>
+                </section>
+            </section>
+
+            <section id="infoContact">
+                <h2>Contact Us</h2>
+                <form method=POST action="https://wp.zybooks.com/form-viewer.php">
+                    <label for="myName">Full Name<span class="required">*</span></label>
+                    <input type="text" id="myName" name="myName" placeholder="first and last name" class="hidden" required>
+
+                    <label for="myEmail">Email<span class="required">*</span></label>
+                    <input type="email" id="myEmail" name="myEmail" placeholder="example@domain.com" class="hidden" required>
+
+                    <label for="myPhone">Phone<span class="required">*</span></label>
+                    <input type="tel" id="myPhone" name="myPhone" placeholder="123-456-7890" class="hidden" required>
+
+                    <fieldset>
+                        <legend>Preferred Contact Method<span class="required">*</span></legend>
+
+                        <input type="radio" name="contactPref" id="prefPhone" required>
+                        <label for="prefPhone">Phone</label>
+
+                        <input type="radio" name="contactPref" id="prefEmail" required>
+                        <label for="prefEmail">Email</label>
+                    </fieldset>
+
+                    <label>Comments</label>
+                    <textarea></textarea>
+
+                    <input type="submit" name="mySubmit" id="mySubmit">
+                    <p id="confirm" class="hidden"></p>
+                </form>
+            </section>
+        </main>
+        <footer>
+            <small>Copyright Best Flowers &copy; 2023 - Hannah Kaminsky</small>
+        </footer>
+    </div>
+</body>
+</html>
